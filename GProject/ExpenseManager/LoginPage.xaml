@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseManager.LoginPage"
+             Title="LoginPage">
+   <Grid>
+        <Image Source="loginpageimage.jpg" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+
+        <StackLayout  Spacing="30" Padding="20" Margin="200">
+
+                <Label Text="Expense Tracker" HorizontalOptions="CenterAndExpand" FontSize="40" TextColor="GhostWhite"/>
+
+                <Frame BorderColor="White" BackgroundColor="Transparent" CornerRadius="20" Padding="30"  HorizontalOptions="Center">
+
+                    <Grid RowSpacing="30" ColumnSpacing="10" VerticalOptions="CenterAndExpand">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Entry x:Name="UsernameEntry" BackgroundColor="WhiteSmoke" Placeholder="Username" PlaceholderColor="Black" TextColor="Black" FontSize="20" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+
+                        <Entry x:Name="PasswordEntry" BackgroundColor="WhiteSmoke" Placeholder="Password" PlaceholderColor="Black" TextColor="Black" FontSize="20" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" IsPassword="True" />
+
+                        <Button Text="Login"
+                                    Clicked="Login_Clicked"
+                                    BorderWidth="4"
+                                    BorderColor="Black"
+                                    MaximumWidthRequest="200"
+                                    BackgroundColor="LightGray"
+                                    TextColor="Black"
+                                    FontSize="18"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3"
+                                    />
+                    </Grid>
+                </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

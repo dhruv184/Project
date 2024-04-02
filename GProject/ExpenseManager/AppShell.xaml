@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ExpenseManager.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ExpenseManager"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Login Page"
+        ContentTemplate="{DataTemplate local:LoginPage}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Page1"
+        ContentTemplate="{DataTemplate local:Page1}"
+        Route="Page1" />
+
+    <ShellContent
+        Title="Page2"
+        ContentTemplate="{DataTemplate local:Page2}"
+        Route="Page2" />
+
+    <ShellContent
+        Title="Page3"
+        ContentTemplate="{DataTemplate local:Page3}"
+        Route="Page3" />
+
+    <ShellContent
+        Title="Page4"
+        ContentTemplate="{DataTemplate local:Page4}"
+        Route="Page4" />
+
+    <ShellContent
+        Title="Page5"
+        ContentTemplate="{DataTemplate local:Page5}"
+        Route="Page5" />
+
+    <ShellContent
+        Title="Page6"
+        ContentTemplate="{DataTemplate local:Page6}"
+        Route="Page6" />
+
+</Shell>
+

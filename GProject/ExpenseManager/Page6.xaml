@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseManager.Page6"
+             Title="Page6">
+    <Grid>
+
+        <Image Source="background.jpg" Aspect="AspectFill" />
+
+        <Label Text="Calculator" FontSize="Large" HorizontalOptions="Center" Margin="0,10,0,20" TextColor="GhostWhite"/>
+
+        <Frame BorderColor="Black" BackgroundColor="Transparent" CornerRadius="20" Padding="0" Margin="20" MaximumWidthRequest="700" MaximumHeightRequest="800">
+
+            <StackLayout  Spacing="20" Padding="20">
+      
+                <Frame BorderColor="Black" BackgroundColor="Gray" CornerRadius="20" Padding="10"  HorizontalOptions="Center">
+
+                    <Grid RowSpacing="15" ColumnSpacing="15">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Entry x:Name="inputEntry" Placeholder="0" FontSize="30" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4" BackgroundColor="LightGrey" PlaceholderColor="Black"/>
+
+                        <Button Text="/" Grid.Row="2" Grid.Column="3" Clicked="OperatorButton_Clicked" MaximumWidthRequest="100" BackgroundColor="Orange" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="(" Grid.Row="2" Grid.Column="0" Clicked="BracketsButton_Clicked1" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text=")" Grid.Row="2" Grid.Column="1" Clicked="BracketsButton_Clicked2" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="." Grid.Row="2" Grid.Column="2" Clicked="DecimalButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                
+                        <Button Text="7" Grid.Row="3" Grid.Column="0" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="8" Grid.Row="3" Grid.Column="1" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="9" Grid.Row="3" Grid.Column="2" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="*" Grid.Row="3" Grid.Column="3" Clicked="OperatorButton_Clicked" MaximumWidthRequest="100" BackgroundColor="Orange" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+
+                        <Button Text="4" Grid.Row="4" Grid.Column="0" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="5" Grid.Row="4" Grid.Column="1" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="6" Grid.Row="4" Grid.Column="2" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="-" Grid.Row="4" Grid.Column="3" Clicked="OperatorButton_Clicked" MaximumWidthRequest="100" BackgroundColor="Orange" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+
+                        <Button Text="1" Grid.Row="5" Grid.Column="0" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="2" Grid.Row="5" Grid.Column="1" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="3" Grid.Row="5" Grid.Column="2" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="+" Grid.Row="5" Grid.Column="4" Clicked="OperatorButton_Clicked" MaximumWidthRequest="100" BackgroundColor="Orange" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+
+                        <Button Text="0" Grid.Row="6" Grid.Column="0" Clicked="NumberButton_Clicked" MaximumWidthRequest="100" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="C" Grid.Row="6" Grid.Column="1" Clicked="ClearButton_Clicked" MaximumWidthRequest="100" BackgroundColor="LightGray" Grid.ColumnSpan="1" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+                        <Button Text="=" Grid.Row="6" Grid.Column="2" Clicked="EqualButton_Clicked" MaximumWidthRequest="100" BackgroundColor="LightGray" Grid.ColumnSpan="2" FontSize="20" BorderWidth="2" BorderColor="Black"/>
+
+                    </Grid>
+                   </Frame>
+
+                 <Button Text="Clear History" Clicked="ClearHistory_Clicked" MaximumWidthRequest="150" BackgroundColor="LightGray" FontSize="20" BorderWidth="4" BorderColor="Black" TextColor="Black"/>
+
+                 <ListView x:Name="historyListView" WidthRequest="500">
+                     <ListView.ItemTemplate>
+                         <DataTemplate>
+                             <TextCell Text="{Binding}" />
+                         </DataTemplate>
+                     </ListView.ItemTemplate>
+                 </ListView>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

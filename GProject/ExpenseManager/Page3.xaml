@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseManager.Page3"
+             Title="Page3">
+    <Grid>
+         <Image Source="background.jpg" Aspect="AspectFill" />
+
+         <Frame Margin="20" BorderColor="Black" BackgroundColor="Transparent" CornerRadius="10" HasShadow="True" MaximumHeightRequest="900" MaximumWidthRequest="1200">
+
+             <StackLayout Margin="20">
+                <Label Text="Items List" HorizontalOptions="Center" FontSize="40" TextColor="GhostWhite" Margin="0,20,0,10" />
+
+                <ListView x:Name="listView" HasUnevenRows="True" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Orientation="Horizontal" Spacing="20">
+                                    <Label Text="{Binding ItemName}" FontSize="Medium" />
+                                    <Label Text="{Binding ItemPrice, StringFormat='Price: {0:C}'}" FontSize="Medium" />
+                                    <Label Text="{Binding ItemQuantity, StringFormat='Quantity: {0}'}" FontSize="Medium" />
+                                    <Label Text="{Binding ItemDiscount, StringFormat='Discount: {0:C}%'}" FontSize="Medium" />
+                                    <!--<Label Text="{Binding SelectedDate, StringFormat='Date of Purchase: {0:d}'}" FontSize="Medium" />-->
+                                    <Label Text="{Binding TotalPrice, StringFormat='Total Price: {0:C}'}" FontSize="Medium" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate> 
+                </ListView>
+
+                <Label Text="{Binding TotalAllItemsPrice, StringFormat='Total of all Items Price: {0:C}'}"
+                       x:Name="TotalAllItemsPriceLabel"
+                       FontSize="Medium" 
+                       HorizontalOptions="End" 
+                       VerticalOptions="End" 
+                       Margin="0,20,20,20"
+                       TextColor="White"
+                       />
+            </StackLayout>
+         </Frame>
+    </Grid>
+</ContentPage>

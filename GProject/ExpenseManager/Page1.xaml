@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseManager.Page1"
+             Title="Page1">
+    <Grid>
+
+        <Image Source="background.jpg" Aspect="AspectFill" />
+
+        <Frame BorderColor="Black" BackgroundColor="Transparent"  HasShadow="True" Padding="0" MaximumHeightRequest="500" MaximumWidthRequest="490">
+
+            <StackLayout x:Name="layout" Orientation="Vertical" HorizontalOptions="Center" Margin="100" Spacing="20">
+
+                <Label Text="Select Category" FontSize="40" HorizontalOptions="Center" TextColor="GhostWhite"/>
+
+                <Picker x:Name="categoryPicker" FontSize="20" SelectedIndexChanged="categoryPicker_SelectedIndexChanged" MinimumWidthRequest="200" BackgroundColor="White">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Grocery</x:String>
+                            <x:String>Bill Payments</x:String>
+                            <x:String>Calculator</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Entry x:Name="budgetTextBox" Placeholder="Enter Budget" FontSize="20" MinimumWidthRequest="200" BackgroundColor="White"/>
+
+                <Button Text="Next" Clicked="Goto_Clicked" TextColor="Black" HorizontalOptions="Center" Margin="0,20" MinimumWidthRequest="100" BorderWidth="4"  BorderColor="Black" BackgroundColor="LightGrey"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

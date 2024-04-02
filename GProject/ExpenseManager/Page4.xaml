@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseManager.Page4"
+             Title="Page4">
+    <Grid>
+
+        <Image Source="background.jpg" Aspect="AspectFill" />
+
+        <Frame BorderColor="Black" CornerRadius="10" HasShadow="True" Margin="40" Background="Transparent" MaximumHeightRequest="500" MaximumWidthRequest="700">
+
+            <StackLayout Margin="40" Spacing="20" HorizontalOptions="Center">
+
+                <Label Text="Select Bill Type" FontSize="40" HorizontalOptions="Center" TextColor="GhostWhite"/>
+
+                <StackLayout Orientation="Horizontal" Spacing="77">
+
+                        <Switch x:Name="switchEntryOrSelect" Toggled="switchEntryOrSelect_Toggled" ToolTipProperties.Text="To type the Bill type, click switch" ThumbColor="Brown"/>
+
+                        <Entry x:Name="entryBillType" Placeholder="Enter Bill Type" FontSize="20" IsVisible="False" MinimumWidthRequest="200" BackgroundColor="White" />
+
+                        <Picker x:Name="pickerBillType" IsVisible="True" MinimumWidthRequest="200" BackgroundColor="White">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Electricity Bill</x:String>
+                                    <x:String>Water Bill</x:String>
+                                    <x:String>Credit Bill</x:String>
+                                    <x:String></x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="20">
+                    <Label Text="Bill Amount" FontSize="20" TextColor="GhostWhite"/>
+                    <Entry x:Name="txtBillAmount" MinimumWidthRequest="200" BackgroundColor="White"/>
+                </StackLayout>
+            
+                <StackLayout Orientation="Horizontal" Spacing="28">
+                    <!--<Label Text="Due Date" FontSize="20" TextColor="GhostWhite"/>-->
+                    <!--<DatePicker x:Name="dpDueDate" Margin="0,6" TextColor="White"/>-->
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="28" HorizontalOptions="Center">
+                    <Button Text="Submit" Clicked="SubmitButton" MaximumWidthRequest="100" TextColor="Black" BorderWidth="4" BorderColor="Black" BackgroundColor="LightGrey"/>
+                    <Button Text="Add Bill" Clicked="AddBillButtonClicked" MaximumWidthRequest="100" TextColor="Black" BorderWidth="4" BorderColor="Black" BackgroundColor="LightGrey"/>
+                </StackLayout>
+
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

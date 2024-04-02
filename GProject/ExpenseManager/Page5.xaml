@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExpenseManager.Page5"
+             Title="Page5">
+    <Grid>
+
+        <Image Source="background.jpg" Aspect="AspectFill" />
+        <Frame BorderColor="Black" CornerRadius="10" Margin="20" BackgroundColor="Transparent" MaximumHeightRequest="900" MaximumWidthRequest="1200">
+            <StackLayout Margin="20">
+
+            <Label Text="Bills List" HorizontalOptions="Center" FontSize="40" TextColor="GhostWhite" Margin="0,20,0,10" />
+                <ListView x:Name="listView" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10" Orientation="Horizontal" Spacing="20" >
+                                    <Label Text="{Binding BillType}"  FontSize="Medium"/>
+                                    <Label Text="{Binding BillAmount,StringFormat='Bill Amount: {0:C}'}"  FontSize="Medium" />
+                                    <!--<Label Text="{Binding DueDate, StringFormat='Due Date: {0:d}'}"  FontSize="Medium" />-->
+                                    <Label Text="{Binding Status}" FontSize="Medium" TextColor="Red" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Label x:Name="totalPendingLabel"
+                       Text="Total Pending: "
+                       HorizontalOptions="End" 
+                       VerticalOptions="End" 
+                       FontSize="Medium"
+                       TextColor="Red"
+                       Margin="0,10,10,10"/>
+            </StackLayout>
+        </Frame>    
+    </Grid>
+</ContentPage>

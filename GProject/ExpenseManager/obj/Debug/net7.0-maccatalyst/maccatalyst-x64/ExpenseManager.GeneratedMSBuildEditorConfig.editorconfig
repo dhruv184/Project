@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ExpenseManager
+build_property.ProjectDir = /Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Page1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Page1.xaml
+build_metadata.AdditionalFiles.TargetPath = Page1.xaml
+build_metadata.AdditionalFiles.RelativePath = Page1.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Page2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Page2.xaml
+build_metadata.AdditionalFiles.TargetPath = Page2.xaml
+build_metadata.AdditionalFiles.RelativePath = Page2.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Page3.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Page3.xaml
+build_metadata.AdditionalFiles.TargetPath = Page3.xaml
+build_metadata.AdditionalFiles.RelativePath = Page3.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Page4.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Page4.xaml
+build_metadata.AdditionalFiles.TargetPath = Page4.xaml
+build_metadata.AdditionalFiles.RelativePath = Page4.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Page5.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Page5.xaml
+build_metadata.AdditionalFiles.TargetPath = Page5.xaml
+build_metadata.AdditionalFiles.RelativePath = Page5.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Page6.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Page6.xaml
+build_metadata.AdditionalFiles.TargetPath = Page6.xaml
+build_metadata.AdditionalFiles.RelativePath = Page6.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/dhruvpatel/Desktop/programming college/Semester - 2/Assignments/GroupProject/Project/GProject/ExpenseManager/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ExpenseManager.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
